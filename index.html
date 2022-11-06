@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | 3-column preview card component | by Phoebe </title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+    }
+
+    .main{
+      height: 100vh;
+      display: flex;
+    }
+    .container {
+      width: 920px;
+      height: 500px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .left {
+      width: calc(100% / 3);
+      height: 100%;
+      background-color: hsl(31, 77%, 52%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .middle {
+      width: calc(100% / 3);
+      height: 100%;
+      background-color: hsl(184, 100%, 22%);
+      position: relative;
+
+    }
+
+    .right {
+      width: calc(100% / 3);
+      height: 100%;
+      background-color: hsl(179, 100%, 13%);
+      position: relative;
+
+    }
+
+    img {
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+
+    .text-pos {
+      padding-left: 30px;
+
+    }
+
+    .text {
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    .title {
+      font-family: 'Big Shoulders Display', serif;
+      font-weight: 700px;
+      font-size: 40px;
+      margin: 20px 5px;
+
+    }
+
+    .content {
+      font-family: 'Lexend Deca', serif;
+      font-weight: 400px;
+      margin: 20px 5px;
+    }
+
+    button {
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 20px;
+      margin: 20px 5px 10px;
+      position: absolute;
+      bottom: 35px;
+    }
+
+    .btn1 {
+      color: hsl(31, 77%, 52%);
+    }
+
+    .btn2 {
+      color: hsl(184, 100%, 22%);
+    }
+
+    .btn3 {
+      color: hsl(179, 100%, 13%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="left">
+        <div class="text-pos">
+          <img src="./images/icon-sedans.svg">
+          <div class="text">
+            <div class="title">Sedans</div>
+            <div class="content"> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in
+              the city
+              or on your next road trip.</div>
+          </div>
+          <button class="btn1">Learn More</button>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="text-pos">
+          <img src="./images/icon-suvs.svg">
+          <div class="text">
+            <div class="title">SUVs</div>
+            <div class="content">Take an SUV for its spacious interior, power, and versatility. Perfect for your next
+              family vacation
+              and off-road adventures.</div>
+          </div>
+          <button class="btn2">Learn More</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="text-pos">
+          <img src="./images/icon-luxury.svg">
+          <div class="text">
+            <div class="title">Luxury</div>
+            <div class="content">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of
+              a luxury
+              rental and arrive in style.</div>
+          </div>
+          <button class="btn3">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Phoebe Wei</a>.
+    </div>
+</body>
+
+</html>
